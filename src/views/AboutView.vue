@@ -8,7 +8,7 @@
           <div class="col-md-6">
             <img
               class="card-img imagem"
-              src="../img/gustavodiniz.png"
+              src="../assets/img/gustavodiniz.png"
               alt="Foto Gustavo"
             />
           </div>
@@ -40,33 +40,3 @@
     </div>
   </div>
 </template>
-
-<style>
-
-.nome {
-  margin-top: 30px;
-}
-
-p {
-  margin: 0 0 5px 10px;
-}
-
-.imagem {
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  height: 60vh;
-  transform: scaleX(-1);
-}
-
-.card-personagens {
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  height: 70vh;
-}
-
-.card-personagens:hover {
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-</style>

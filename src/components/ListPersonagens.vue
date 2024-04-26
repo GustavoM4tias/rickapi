@@ -20,24 +20,3 @@ const imageUrl = "https://rickandmortyapi.com/api/character/avatar/" + personage
         </div>
     </div>
 </template>
-
-<style>
-p{
-    margin: 0 0 7px 10px;
-}
-
-.img-personagem {
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
-}
-
-.card-personagens {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
-
-.card-personagens:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-}
-</style>
-

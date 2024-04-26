@@ -1,0 +1,62 @@
+/*App.vue*/
+
+.header {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+footer {
+  bottom: 0;
+  height: 50px;
+}
+
+/*List Personagens*/
+
+p {
+  margin: 0 0 7px 10px;
+}
+
+.img-personagem {
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
+}
+
+/*Home View*/
+
+.seta {
+  font-size: 40px;
+}
+
+.seta:hover {
+  color: rgb(100, 100, 100);
+}
+
+/*About View*/
+
+.nome {
+  margin-top: 30px;
+}
+
+p {
+  margin: 0 0 5px 10px;
+}
+
+.imagem {
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  height: 60vh;
+  transform: scaleX(-1);
+}
+
+.card-personagens {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 70vh;
+}
+
+.card-personagens:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}

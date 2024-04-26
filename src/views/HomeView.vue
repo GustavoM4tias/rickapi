@@ -61,14 +61,14 @@ const backPage = () => {
         </div>
       </div>
     <div class="p-2">
-      <p class="text-center">Pagina: {{ contador }}</p>
+      <p class="text-center">{{ contador }} | 42</p>
       <div class="d-flex justify-content-center">
-        <button class="btn btn-secondary m-1 p-1" @click="backPage">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="btn btn-secondary m-1 p-1" @click="nextPage">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+        <div @click="backPage">
+          <i class="bi bi-caret-left-fill seta"></i>
+        </div>
+        <div @click="nextPage">
+          <i class="bi bi-caret-right-fill seta"></i>
+        </div>
       </div>
     </div>
     </div>
