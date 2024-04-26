@@ -1,62 +1,66 @@
 <template>
-  <div class="container-fluid d-flex justify-content-center tela">
-    <div class="col-4 p-5">
-    <div class="card p-1 card-personagens">
-      <img class="imagem p-1" src="../img/gustavo.png" alt="Foto Gustavo" />
-      <div class="col-12">
-        <p class="text-start small" style="margin-top: 15px">
-          <strong>Nome: </strong> Gustavo Diniz "Smith"
-        </p>
-        <p class="text-start small status">
-          <strong>Status: </strong> Alive (ainda bem)
-        </p>
-        <p class="text-start small">
-          <strong>Espécie: </strong> Human
-        </p>
-        <p class="text-start small">
-          <strong>Gênero: </strong> Male
-        </p>
-        <p class="text-start small">
-          <strong>Local: </strong> Earth
-        </p>
-        <p class="text-start small">
-          <strong>RA: </strong> 1977490
-        </p>
-        <p class="text-start small">
-          <strong>Curso: </strong> 3º Termo C, ADS.
-        </p>
-        <p class="text-start small">
-          <strong>University: </strong> Unimar 
-        </p>
-        <p class="text-start small">
-          Aparece em <strong>algumas</strong> aulas.
-        </p>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div
+        class="card card-personagens col-lg-8 m-5 justify-content-center align-items-center"
+      >
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="card-img imagem"
+              src="../img/gustavodiniz.png"
+              alt="Foto Gustavo"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Nome:</strong> Gustavo Diniz "Smith"
+              </p>
+              <p class="card-text">
+                <strong>Status:</strong> Alive (ainda bem)
+              </p>
+              <p class="card-text"><strong>Espécie:</strong> Human</p>
+              <p class="card-text"><strong>Gênero:</strong> Male</p>
+              <p class="card-text"><strong>Local:</strong> Earth</p>
+              <p class="card-text"><strong>RA:</strong> 1977490</p>
+              <p class="card-text"><strong>Curso:</strong> 3º Termo C, ADS.</p>
+              <p class="card-text"><strong>University:</strong> Unimar</p>
+              <p class="card-text">
+                Aparece em <strong>algumas</strong> aulas.
+              </p>
+            </div>
+            <div class="m-2 p-2">
+              <a href="#" class="btn btn-dark m-2"><i class="bi bi-github"></i>Link Externo 2</a>
+              <a href="#" class="btn btn-dark">Link Externo 2</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
 <style>
-
-p{
-    margin: 0 0 5px 10px;
+p {
+  margin: 0 0 5px 10px;
 }
 
 .imagem {
   object-fit: cover;
-  width: 300px;
   border-radius: 15px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  height: 60vh;
 }
 
 .card-personagens {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 70vh;
 }
 
 .card-personagens:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
+  transform: scale(1.02);
+  transition: 0.3s;
 }
-
 </style>
