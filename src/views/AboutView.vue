@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div
-        class="card card-personagens col-lg-8 m-5 justify-content-center align-items-center"
+        class="card card-personagens col-lg-8 col-sm-10 m-5 justify-content-center align-items-center"
       >
         <div class="row">
           <div class="col-md-6">
@@ -30,8 +30,8 @@
                 Aparece em <strong>algumas</strong> aulas.
               </p>
               <div class="botoes">
-                <a href="#" class="btn btn-dark m-2"><i class="bi bi-github"></i> Github</a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/GustavoM4tias/rickapi" target="_blank" class="btn btn-dark m-2"><i class="bi bi-github"></i> Github</a>
+                <a href="#" target="_blank" class="btn btn-primary"><i class="bi bi-linkedin"></i> LinkedIn</a>
               </div>
             </div>
           </div>
