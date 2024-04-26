@@ -8,17 +8,17 @@ let num = ref(0)
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
         <div class="container-fluid">
-            <router-link class="navbar-brand" to="/">Pokedex</router-link>
+            <router-link class="navbar-brand" to="/">RickApi</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <router-link class="nav-link" aria-current="page" to="/">Início</router-link>
+                        <router-link class="nav-link" aria-current="page" to="/">Cards</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/about">Sobre</router-link>
+                        <router-link class="nav-link" to="/about">Créditos</router-link>
                     </li>
                 </ul>
             </div>
@@ -29,8 +29,8 @@ let num = ref(0)
         <router-view></router-view>
     </div>
 
-    <footer class="bg-dark text-light d-flex align-items-center justify-content-center w-100 position-fixed">
-        <div>Unimar | ADS | {{ new Date().getFullYear() }}</div>
+    <footer class="bg-dark text-light d-flex align-items-center justify-content-center w-100">
+        <div>Gustavo Diniz | Unimar | ADS | {{ new Date().getFullYear() }}</div>
     </footer>
 </template>
 

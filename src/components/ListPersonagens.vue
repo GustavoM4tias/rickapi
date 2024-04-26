@@ -1,5 +1,5 @@
-<script setup> 
-const personagem = defineProps(["name", "url", "status", "species", "gender", "location"])
+<script setup>
+const personagem = defineProps(["name", "url", "status", "species", "gender", "location", "episode"])
 const personagemId = personagem.url.split('/')[5]
 const imageUrl = "https://rickandmortyapi.com/api/character/avatar/" + personagemId + ".jpeg" 
 
@@ -7,18 +7,37 @@ const imageUrl = "https://rickandmortyapi.com/api/character/avatar/" + personage
 
 <template>
     <div class="col-md-3 col-sm-6 p-2">
-        <div class="card p-2" style="box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);">
-            <img :src="imageUrl" alt="Personagem" style="border-radius: 5px;">
-            <p class="text-start ">Nome: {{personagem.name}}</p>
-            <p class="text-start ">Status: {{personagem.status}}</p>
-            <p class="text-start ">Espécie: {{personagem.species}}</p>
-            <p class="text-start ">Genero: {{personagem.gender}}</p>
-            <p class="text-start ">Local: {{personagem.location}}</p>
+        <div class="card p-2 card-personagens">
+            <img class="img-personagem p-2" :src="imageUrl" alt="Personagem" style="border-radius: 15px;">
+            <div class="col-12">
+                <p class="text-start small" style="margin-top: 15px;"><strong>Nome: </strong>{{personagem.name}}</p>
+                <p class="text-start small status"><strong>Status: </strong>{{personagem.status}}</p>
+                <p class="text-start small"><strong>Espécie: </strong>{{personagem.species}}</p>
+                <p class="text-start small"><strong>Gênero: </strong>{{personagem.gender}}</p>
+                <p class="text-start small"><strong>Local: </strong>{{personagem.location}}</p>
+                <p class="text-start small">Aparece em <strong>{{personagem.episode}}</strong> episódios.</p>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
+p{
+    margin: 0 0 7px 10px;
+}
 
+.img-personagem {
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
+}
+
+.card-personagens {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card-personagens:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
 </style>
 
