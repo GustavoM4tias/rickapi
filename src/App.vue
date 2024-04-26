@@ -7,8 +7,8 @@ let num = ref(0)
 
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
-        <div class="container-fluid">
-            <router-link class="navbar-brand" to="/">RickApi</router-link>
+        <div class="container-fluid header">
+            <router-link class="navbar-brand" style="font-size: 30px;" to="/"><img class="rick" style="height: 50px; transform: scaleX(-1); margin: 0 10px 0 5px;" src="/src/img/picklerick.png" alt=""> Rick and Morty</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,6 +35,22 @@ let num = ref(0)
 </template>
 
 <style>
+
+.header {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.rick {
+    transition: transform 0.5s ease; 
+}
+
+.rick:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
 
 footer{
     bottom: 0;

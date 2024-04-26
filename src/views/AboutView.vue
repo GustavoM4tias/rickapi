@@ -12,10 +12,10 @@
               alt="Foto Gustavo"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <div class="card-body">
               <p class="card-text nome">
-                <strong>Nome:</strong> Gustavo Diniz "Smith"
+                <strong>Nome:</strong> Gustavo "Smith" Diniz 
               </p>
               <p class="card-text">
                 <strong>Status:</strong> Alive (ainda bem)
@@ -56,6 +56,7 @@ p {
   border-radius: 15px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   height: 60vh;
+  transform: scaleX(-1);
 }
 
 .card-personagens {
