@@ -14,7 +14,7 @@
           </div>
           <div class="col-md-6">
             <div class="card-body">
-              <p class="card-text">
+              <p class="card-text nome">
                 <strong>Nome:</strong> Gustavo Diniz "Smith"
               </p>
               <p class="card-text">
@@ -29,10 +29,10 @@
               <p class="card-text">
                 Aparece em <strong>algumas</strong> aulas.
               </p>
-            </div>
-            <div class="m-2 p-2">
-              <a href="#" class="btn btn-dark m-2"><i class="bi bi-github"></i>Link Externo 2</a>
-              <a href="#" class="btn btn-dark">Link Externo 2</a>
+              <div class="botoes">
+                <a href="#" class="btn btn-dark m-2"><i class="bi bi-github"></i> Github</a>
+                <a href="#" class="btn btn-primary"><i class="bi bi-linkedin"></i> LinkedIn</a>
+              </div>
             </div>
           </div>
         </div>
@@ -42,6 +42,11 @@
 </template>
 
 <style>
+
+.nome {
+  margin-top: 30px;
+}
+
 p {
   margin: 0 0 5px 10px;
 }
