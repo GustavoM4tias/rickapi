@@ -29,3 +29,5 @@ npm run build
 ```
 
 Projected by Gustavo Diniz.
+
+View the Project in www.ricksanchezapi.netlify.app
